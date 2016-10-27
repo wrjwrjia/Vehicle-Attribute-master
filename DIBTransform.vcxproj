@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>MFCProj</Keyword>
+    <ProjectGuid>{B8702AFC-E892-463A-9672-4B6D6CB43F2A}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Debug\DIBTransform.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\DIBTransform.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\DIBTransform.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>.\Debug\DIBTransform.exe</OutputFile>
+      <AdditionalDependencies>SkinPPWTL.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="CharPretreat.cpp" />
+    <ClCompile Include="CharRecognise.cpp" />
+    <ClCompile Include="ChildFrm.cpp" />
+    <ClCompile Include="ConvolutionFilter.cpp" />
+    <ClCompile Include="Dib.cpp" />
+    <ClCompile Include="DIBTransform.cpp" />
+    <ClCompile Include="DIBTransformDoc.cpp" />
+    <ClCompile Include="DIBTransformView.cpp" />
+    <ClCompile Include="GrayProcess.cpp" />
+    <ClCompile Include="ImageAreaProcess.cpp" />
+    <ClCompile Include="ImageEdge.cpp" />
+    <ClCompile Include="ImageGeometry.cpp" />
+    <ClCompile Include="ImageIncise.cpp" />
+    <ClCompile Include="ImageLocation.cpp" />
+    <ClCompile Include="ImagePointProcess.cpp" />
+    <ClCompile Include="ImageProcess.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="MedianFilter.cpp" />
+    <ClCompile Include="SpecialDetectionFilter.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="ZoomDlg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DIBTransform.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CharPretreat.h" />
+    <ClInclude Include="CharRecognise.h" />
+    <ClInclude Include="ChildFrm.h" />
+    <ClInclude Include="ConvolutionFilter.h" />
+    <ClInclude Include="Dib.h" />
+    <ClInclude Include="DIBTransform.h" />
+    <ClInclude Include="DIBTransformDoc.h" />
+    <ClInclude Include="DIBTransformView.h" />
+    <ClInclude Include="GrayProcess.h" />
+    <ClInclude Include="ImageAreaProcess.h" />
+    <ClInclude Include="ImageEdge.h" />
+    <ClInclude Include="ImageGeometry.h" />
+    <ClInclude Include="ImageIncise.h" />
+    <ClInclude Include="ImageLocation.h" />
+    <ClInclude Include="ImagePointProcess.h" />
+    <ClInclude Include="ImageProcess.h" />
+    <ClInclude Include="Img.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MedianFilter.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SpecialDetectionFilter.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="ZoomDlg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\DIBTransform.ico" />
+    <Image Include="res\DIBTransformDoc.ico" />
+    <Image Include="res\Toolbar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\DIBTransform.rc2" />
+    <CustomBuild Include="res\lcross.cur" />
+    <CustomBuild Include="res\MAGNIFY.CUR" />
+    <CustomBuild Include="res\magnify_1.cur" />
+    <CustomBuild Include="res\magnify_2.cur" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
